@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="instructions_pane" fx:id="instructions_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Instructions">
+   <children>
+      <ImageView fitHeight="898.0" fitWidth="603.0" layoutY="-285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/BG.jpg" />
+         </image>
+      </ImageView>
+      <Button id="controls_btn" fx:id="controls_btn" layoutX="81.0" layoutY="522.0" mnemonicParsing="false" onMouseClicked="#control_btn_clicked" onMouseEntered="#controls_btn_entered" onMouseExited="#controls_btn_exited" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #ff3960;" text="Controls" textFill="#191414">
+         <font>
+            <Font name="Forte" size="30.0" />
+         </font>
+      </Button>
+      <Button id="back_btn" fx:id="back_btn" layoutX="361.0" layoutY="522.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" onMouseEntered="#back_btn_entered" onMouseExited="#back_btn_exited" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #ff3960;" text="Back" textFill="#131111">
+         <font>
+            <Font name="Forte" size="30.0" />
+         </font>
+      </Button>
+      <Label layoutX="56.0" layoutY="23.0" text="Instructions for Tetris Game" textFill="#ff3960">
+         <font>
+            <Font name="Forte" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="41.0" prefHeight="481.0" prefWidth="562.0" text="Tetris is primarily composed of a field of play in which pieces&#10;of different geometric forms, called &quot;tetriminos&quot;, descend from &#10;the top of the field. During this descent, the player can move &#10;the pieces laterally and rotate them until they touch the bottom &#10;of the field or land on a piece that had been placed before it.The&#10;player can neither slow down the falling pieces nor stop them,&#10;but can accelerate them in most versions. The objective of the&#10;game is to use the pieces to create as many horizontal lines &#10;of blocks as possible.When a line is completed, it disappears&#10;,and the blocks placed above fall one rank. Completing lines&#10;grants points, and accumulating a certain number of points&#10;moves the player up a level,which increases the number of points&#10;granted per completed line." textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

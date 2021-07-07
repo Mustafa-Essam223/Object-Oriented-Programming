@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Main_menu">
+   <children>
+      <ImageView fitHeight="864.0" fitWidth="575.0" layoutY="-263.0" preserveRatio="true">
+         <image>
+            <Image url="@../Images/BG.jpg" />
+         </image>
+      </ImageView>
+      <Label id="tetris_txt" fx:id="tetris_txt" layoutX="14.0" prefHeight="118.0" prefWidth="274.0" text="TETRIS" textFill="DEEPPINK">
+         <font>
+            <Font name="Forte" size="80.0" />
+         </font>
+      </Label>
+      <Label id="game_txt" fx:id="game_txt" layoutX="284.0" layoutY="73.0" prefHeight="118.0" prefWidth="274.0" text="GAME" textFill="AQUAMARINE">
+         <font>
+            <Font name="Forte" size="80.0" />
+         </font>
+      </Label>
+      <Button id="Start_btn" fx:id="Start_btn" layoutX="190.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#Start_btn_clicked" onMouseEntered="#start_btn_entered" onMouseExited="#start_btn_Exited" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: plum;" text="Start Game" textFill="#362e2e">
+         <font>
+            <Font name="Forte" size="31.0" />
+         </font></Button>
+      <Button id="score_btn" fx:id="score_btn" layoutX="190.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#score_btn_clicked" onMouseEntered="#score_btn_entered" onMouseExited="#score_btn_exited" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: plum;" text="Show Score" textFill="#362e2e">
+         <font>
+            <Font name="Forte" size="31.0" />
+         </font></Button>
+      <Button id="instructions_btn" fx:id="instructions_btn" layoutX="190.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#instructions_btn_clicked" onMouseEntered="#instructions_btn_entered" onMouseExited="#innstructions_btn_exited" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: plum;" text="Instructions" textFill="#362e2e">
+         <font>
+            <Font name="Forte" size="31.0" />
+         </font></Button>
+      <Button id="exit_btn" fx:id="exit_btn" layoutX="191.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#exit_btn_click" onMouseEntered="#exit_btn_entered" onMouseExited="#exit_btn_exited" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: plum;" text="Exit" textFill="#362e2e">
+         <font>
+            <Font name="Forte" size="31.0" />
+         </font></Button>
+   </children>
+</Pane>
